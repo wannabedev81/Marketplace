@@ -1,0 +1,34 @@
+[
+  {
+    "email": "test@example.com",
+    "password": "$2b$10$cU/osR2zQvEbvlc7Bne4guFibpsS7HxdgvFIBAP/CC1zDGfJ30wZC"
+  },
+  {
+    "email": "testaccount@test.com",
+    "password": "$2b$10$gqczuhH5sgsc6e28y3inQuJCDq5xzA.yy3iEceAlJU39H8Mlzypp."
+  },
+  {
+    "email": "try@try.com",
+    "password": "$2b$10$Xz1yVxo/eygM/o96/sty/ueMKOd8YO.m42nRrQnd3cs7kDBdYFgWS"
+  },
+  {
+    "email": "myemail@myemail.com",
+    "password": "$2b$10$bPmP6JGVmuE6ajmGOrNhkOUZGog3PEVHKoPq1A4AuLeafhZESEWG2"
+  },
+  {
+    "email": "eszter@gmail.com",
+    "password": "$2b$10$vha9tu.FcXEVAKuzoTZjrex41FBjKZpLUaKXI.KqQjUTAOcBlISci"
+  },
+  {
+    "email": "test1@test2.com",
+    "password": "$2b$10$v7lWqFMmttNhUMT.H/zsKOltkShlVHlGRk8JR6qyxAD45dsUY5nNy"
+  },
+  {
+    "email": "d2@d2.com",
+    "password": "$2b$10$71CC9s9rUm443dlEM24k4ezwy8Ovh5Kp1m6MPXusLdBbVIzoBW0ii"
+  },
+  {
+    "email": "d4@d4.com",
+    "password": "$2b$10$IopNbogMaPAWNn4w3L4qKOjnA0yIKLQRZ7RryDif6qUpD8atYwXNW"
+  }
+]

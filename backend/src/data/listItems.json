@@ -1,0 +1,120 @@
+[
+  {
+    "title": "my beloved dress",
+    "size": "M",
+    "price": 1200,
+    "condition": "good",
+    "imageUrl": "...",
+    "style": "modern",
+    "location": "Debrecen"
+  },
+  {
+    "id": 1755291071689,
+    "title": "asdfa",
+    "size": "M",
+    "price": "2314",
+    "condition": "klkjd",
+    "imageUrl": "",
+    "style": "kadf",
+    "location": "",
+    "owner": "try2@try.com"
+  },
+  {
+    "id": 1755291849756,
+    "title": "fhgfgh",
+    "size": "M",
+    "price": "56655",
+    "condition": "hggtz",
+    "imageUrl": "",
+    "style": "tftf",
+    "location": "",
+    "owner": "eszter@gmail.com"
+  },
+  {
+    "id": 1756887454628,
+    "title": "fsgdfgdfsg",
+    "size": "S",
+    "price": "4444",
+    "condition": "Like new",
+    "originalImagePath": "/uploads/1756887448927.JPG",
+    "imageUrl": "/uploads/processed/1756887448927-300w.jpg",
+    "images": [
+      {
+        "size": "300w",
+        "format": "jpg",
+        "path": "/uploads/processed/1756887448927-300w.jpg"
+      },
+      {
+        "size": "300w",
+        "format": "webp",
+        "path": "/uploads/processed/1756887448927-300w.webp"
+      },
+      {
+        "size": "600w",
+        "format": "jpg",
+        "path": "/uploads/processed/1756887448927-600w.jpg"
+      },
+      {
+        "size": "600w",
+        "format": "webp",
+        "path": "/uploads/processed/1756887448927-600w.webp"
+      },
+      {
+        "size": "1024w",
+        "format": "jpg",
+        "path": "/uploads/processed/1756887448927-1024w.jpg"
+      },
+      {
+        "size": "1024w",
+        "format": "webp",
+        "path": "/uploads/processed/1756887448927-1024w.webp"
+      }
+    ],
+    "style": "Mermaid",
+    "location": "",
+    "owner": "d2@d2.com"
+  },
+  {
+    "id": 1756970005849,
+    "title": "dasfd",
+    "size": "S",
+    "price": "3333",
+    "condition": "Like new",
+    "imageUrl": "/uploads/processed/1756970003866-300w.jpg",
+    "images": [
+      {
+        "size": "300w",
+        "format": "jpg",
+        "path": "/uploads/processed/1756970003866-300w.jpg"
+      },
+      {
+        "size": "300w",
+        "format": "webp",
+        "path": "/uploads/processed/1756970003866-300w.webp"
+      },
+      {
+        "size": "600w",
+        "format": "jpg",
+        "path": "/uploads/processed/1756970003866-600w.jpg"
+      },
+      {
+        "size": "600w",
+        "format": "webp",
+        "path": "/uploads/processed/1756970003866-600w.webp"
+      },
+      {
+        "size": "1024w",
+        "format": "jpg",
+        "path": "/uploads/processed/1756970003866-1024w.jpg"
+      },
+      {
+        "size": "1024w",
+        "format": "webp",
+        "path": "/uploads/processed/1756970003866-1024w.webp"
+      }
+    ],
+    "style": "Mermaid",
+    "location": "",
+    "owner": "d4@d4.com"
+  }
+]

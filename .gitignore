@@ -1,0 +1,57 @@
+# ------------------------
+# Node + Angular .gitignore
+# ------------------------
+
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build directories
+dist/
+build/
+tmp/
+temp/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore Angular-specific build output
+frontend/dist/
+frontend/.angular/cache/
+frontend/.angular/
+
+# Optional: Ignore backend build output (if using TypeScript)
+backend/dist/
+backend/build/
+backend/.tsbuildinfo
+
+# Coverage reports
+coverage/
