@@ -1,0 +1,26 @@
+<mat-toolbar>
+    <span>WeddingDress Marketplace</span>
+
+    <span class="spacer"></span>
+    <button mat-button (click)="resetFilters()">All Listings</button>
+    <button mat-button (click)="openFilterDialog()">Filter</button>
+    <button mat-button (click)="openAddNewDialog()">Add New</button>
+</mat-toolbar>
+
+<div class="marketplace-container">
+    <div class="carousel">
+        <div class="slides">
+                <div class="slide" *ngFor="let img of carouselImages; let i = index"
+                    [class.active]="i === activeSlide">
+                <img [src]="img" alt="Wedding Background {{i+1}}">
+                </div>
+            </div>
+
+            <button class="prev" (click)="prevSlide()">&#10094;</button>
+            <button class="next" (click)="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    
+<main>
+    <router-outlet></router-outlet>
+</main>

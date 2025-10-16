@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Filter Dresses</h2>
+<mat-dialog-content>
+    
+    <form [formGroup] ="filterForm">
+        <!--Price filter-->
+        <mat-form-field appearance="fill">
+            <mat-label>Max Price</mat-label>
+            <input matInput type="number" formControlName="priceMax">
+        </mat-form-field>
+    
+        <!--Price filter-->
+        <mat-form-field appearance="fill">
+            <mat-label>Sizes</mat-label>
+            <mat-select formControlName="sizes" multiple>
+                <mat-option value="XS">Extra Small</mat-option>
+                <mat-option value="S">Small</mat-option>
+                <mat-option value="M">Medium</mat-option>
+                <mat-option value="L">Large</mat-option>
+                <mat-option value="XL">Extra Large</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+
+
+<mat-dialog-actions align="end">
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button color="primary" (click)="onApply()">Apply</button>
+</mat-dialog-actions>
+

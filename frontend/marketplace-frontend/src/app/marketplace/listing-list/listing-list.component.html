@@ -1,0 +1,45 @@
+
+
+<div class="listing-grid">
+    <mat-card *ngFor="let dress of dresses" class="dress-card">
+        <picture *ngIf="dress.images && dress.images.length > 0; else placeholder">
+            <ng-container *ngFor="let img of dress.images">
+                <source *ngIf="img.format === 'webp'"
+                [sizes]="'(max-width: ' + img.size.replace('w','') + 'px) 100vw, ' + img.size.replace('w','') + 'px'"
+                [srcset]="apiBaseUrl + img.path"
+                 type="image/webp"/>
+                 
+                <source *ngIf="img.format === 'jpg'" 
+                [sizes]="'(max-width: ' + img.size.replace('w','') + 'px) 100vw, ' + img.size.replace('w','') + 'px'"
+                [srcset]="apiBaseUrl + img.path"
+                type="image/jpeg"/>
+                
+            </ng-container>
+        
+            <img mat-card-image
+                [src]="getImageUrl(dress)"
+                [alt]="'Title ' + dress.title"
+                style="width: 100%; height: auto;"/>
+                <!--[src]="dress.imageUrl ? apiBaseUrl + dress.imageUrl : 'assets/placeholder.jpg'"-->
+        </picture>           
+        
+        <ng-template #placeholder>
+            <img 
+                mat-card-image
+                src="assets/placeholder.jpg"
+                [alt]="'Title ' + dress.title"
+                style="width: 100%; height: auto;"
+            />
+        </ng-template>
+        
+        <mat-card-content>
+            <h3>{{ dress.title }}</h3>
+            <p>{{ dress.style || 'No style specified' }} | Size: {{ dress.size }} | Location: {{ dress.location || 'Unknown' }}</p>
+            <p class="price">{{ dress.price | currency }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>View details</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>

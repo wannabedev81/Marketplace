@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use 'app/styles/theme-colors.scss' as colorTheme;
+
+//define the color theme
+$websiteTheme: mat.define-theme((
+    color: (
+        theme-type: light,
+        primary: colorTheme.$primary-palette,
+        tertiary: colorTheme.$tertiary-palette
+    )
+    ));
+
+//extracting colors: 
+$primary-90: mat.get-theme-color($websiteTheme, primary, 90);
+$primary-10: mat.get-theme-color($websiteTheme, primary, 10);
+//$tertiary-60: mat.get-theme-color($websiteTheme, tertiary, 60);
+
+.primary-10 {
+    color: $primary-10;
+}
+
+$colors: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
+
+@each $color in $colors {
+    .primary-#{$color} {
+        color: mat.get-theme-color($websiteTheme, primary, $color);
+    }
+}
+
+//@each $color in $colors {
+//    .tertiary-#{$color} {
+//        color: mat.get-theme-color($websiteTheme, tertiary, $color);
+//    }
+//}
+
+//:root {
+    //@include mat.core-theme($websiteTheme);
+    //@include mat.toolbar-overrides((
+    //container-background-color: $primary-10,
+    //container-text-color: white,
+    //));
+    //@include mat.button-theme($websiteTheme);
+    //@include mat.toolbar-theme($websiteTheme);
+    
+//}
+
+
+html, body { 
+    height: 100%;
+    @include mat.theme((
+    color: (
+        theme-type: light,
+        primary: colorTheme.$primary-palette,
+        tertiary: colorTheme.$tertiary-palette
+    )
+    ));
+    }
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+   
+ }
+
+
+/* material dialog */
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+/* custom dialog */
+.custom-dialog {
+    .mat-mdc-dialog-content {
+        max-height: calc(80vh - 200px);
+        padding: 24px;
+        overflow-y: auto !important;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 4px;
+        }
+    }
+    mat-form-field {
+        margin-bottom: 16px;
+
+        .mat-mdc-form-field-infix {
+            min-height: 56px;
+        }
+        mat-label {
+            transform-origin: left !important;
+        }
+    }
+}

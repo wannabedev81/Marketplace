@@ -1,0 +1,53 @@
+
+    <form [formGroup]="form" (ngSubmit)="postListing()">
+    <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" placeholder="Enter title" style="color: #949192; font-style: italic">
+    </mat-form-field>
+        <!--similar way need to add the other form fields too-->
+    <mat-form-field appearance="fill">
+        <mat-label>Size</mat-label>
+        <mat-select formControlName="size">
+            <mat-option *ngFor="let s of sizeOptions" [value]="s">{{ s }}</mat-option>
+        </mat-select>  
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input matInput formControlName="price" placeholder="Enter price" style="color: #949192; font-style: italic">
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Condition</mat-label>
+        <mat-select formControlName="condition">
+            <mat-option *ngFor="let c of conditionOptions" [value]="c">{{ c }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Style</mat-label>
+        <mat-select formControlName="style">
+            <mat-option *ngFor="let st of styleOptions" [value]="st">{{ st }}</mat-option>
+        </mat-select>   
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Location</mat-label>
+        <input matInput formControlName="location" placeholder="Enter your location (where the dress can be viewed)" style="color: #949192; font-style: italic">
+    </mat-form-field>
+
+    <div>
+        <label for="file">Upload image</label>
+        <input type="file" (change)="onFileSelected($event)" />
+    </div>
+
+    
+
+    <div class="form-actions">
+        <button mat-button type="button" (click)="cancel()">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">Save</button> <!-- save is not yet connected to db-->
+    </div>
+
+    <div *ngIf="message">{{ message }}</div>
+</form>
+

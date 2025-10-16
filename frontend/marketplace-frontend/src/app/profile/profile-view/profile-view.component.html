@@ -1,0 +1,11 @@
+<h3>Profile Overview</h3>
+<div *ngIf="userEmail; else loggedOut">
+    <p>Welcome, {{ userEmail }}</p>
+</div>
+<ng-template #loggedOut>
+    <p>You are not logged in</p>
+</ng-template>
+
+<div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+</div>

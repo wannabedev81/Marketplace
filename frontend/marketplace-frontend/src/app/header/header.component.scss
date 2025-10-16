@@ -1,0 +1,58 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: relative;
+
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .logo-text {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+}
+
+.main-nav {
+    display: flex;
+    margin-top: 5px;
+    gap: 1rem;
+    position: relative;
+
+    .active-link {
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .action-icons {
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+.profile-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover mat-icon {
+    color: #fff;
+  }
+}
+
+.mat-menu-panel {
+  margin-top: 2px;
+}
+
+.profile-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+
